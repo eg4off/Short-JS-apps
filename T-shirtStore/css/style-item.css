@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #497faf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#item{
+    display: flex;
+    justify-content:center;
+}
+.goods{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 16px 24px 2px#497faf;
+    margin: 20px;
+}
+.goods img{
+    width: 450px;
+}
+h4, p, h5 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+

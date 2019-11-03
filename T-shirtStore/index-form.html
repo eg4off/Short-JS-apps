@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="css/style-form.css">
+</head>
+<body>
+  <form class="login">
+    <input type="email" name="email" class="login-input" placeholder="Email Address" id="email" onchange="checkEmail()" autofocus>
+    <div id="email_error" class="error"></div>
+    <input type="password" name="password" class="login-input" placeholder="Password" id="password" onchange="checkPassword()">
+    <div id="pass_error" class="error"></div>
+    <input type="password" name="password" class="login-input" placeholder="Confirm Password" id="c-password" onchange="checkPasswordMatch()">
+    <div id="cpass_error" class="error"></div>
+    <input type="button" name="button" value="Login" class="login-submit" onclick="toSite()">
+  </form>
+  <script src="js/main-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>T-shirt Shop</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <div class="header"><img src="img/text.png" class="text"></div>
+   <div class="container"> 
+    <div class="main-menu">
+        <div class="categories">
+            <h3>Categories:</h3>
+            <h4 >Сelebrities</h4><input type="checkbox" class="checkbox" id="cel" onchange="onCheckbox()">
+            <h4>Movie</h4><input type="checkbox" class="checkbox" id="mov" onchange="onCheckbox()">
+            <h4>Music</h4><input type="checkbox" class="checkbox" id="mus" onchange="onCheckbox()">
+            <h4>Football</h4><input type="checkbox" class="checkbox" id="fot" onchange="onCheckbox()">
+            <h4 id="last">Items on the page</h4>
+            <input  value="9" id="countPerPage" onchange="numberProducts()">
+        </div>
+        <div class="sort">
+            <h3>Sort by:</h3>
+            <div class="button">
+                <button onclick="sortByName()" onmouseover="buttonOver(this)" onmouseout="buttonOut(this)">Name</button>
+            </div>
+           <div class="button">  
+               <button onclick="sortByColor()" onmouseover="buttonOver(this)" onmouseout="buttonOut(this)">Color</button>
+            </div>
+            <div class="button">
+                <button onclick="sortByGender()" onmouseover="buttonOver(this)" onmouseout="buttonOut(this)">Gender</button>
+            </div>
+            <div class="button">
+                <button onclick="sortByPrice()" onmouseover="buttonOver(this)" onmouseout="buttonOut(this)">Price</button>
+            </div>
+        </div>
+        </div> 
+        <div class="content" >
+            <h1>Be yourself !</h1>
+            <h1>Express your individuality !</h1>
+            <div id="data"></div>
+            <div id="buttons"></div>
+        </div>
+        <div class="basket-counter">
+            <div class="ava" onclick="toBasket()">
+                    <img src="img/basket.png">
+                    <p class="counter"></p>
+            </div>
+        </div>
+   </div> 
+   <div class="bottom">
+       <div class="social">
+            <a onclick="toFacebook()"><img src="img/f.png" class="icon" onmouseover="mOver(this)" onmouseout="mOut(this)"></a>
+            <a onclick="toTelegram()"><img src="img/t.png" class="icon" onmouseover="mOver(this)" onmouseout="mOut(this)"></a>
+            <a onclick="toYoutube()"><img src="img/y.png" class="icon" onmouseover="mOver(this)" onmouseout="mOut(this)"></a>
+            <a onclick="toLinedin()"><img src="img/l.png" class="icon" onmouseover="mOver(this)" onmouseout="mOut(this)"></a>
+       </div>
+       <p>Created by Eugen Chetverov 2019. All rights reserved.</p>
+    </div>
+   <script src="js/main1.js"></script>
+</body>
+</html>
